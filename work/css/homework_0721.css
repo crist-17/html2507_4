@@ -1,0 +1,67 @@
+
+#main {
+  background-color: rgb(142, 212, 30);
+  padding: 0px;
+  height: 280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+   z-index: 1000;
+}
+
+#logo {
+  font-size: 50px;
+  color: red;
+}
+#top_bar {
+  display: flex;
+  justify-content: space-between; /* 좌우 정렬 */
+  align-items: center;            /* 세로 중앙 정렬 */
+  padding: 10px 20px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+   gap: 30px;
+}
+.login {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+#topmenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  gap: 150px;
+  font-size: 25px;
+  color: blueviolet;
+  font-weight: 600;
+  padding: 20px 60px;
+  /* 패딩 */
+}
+
+#topmenu li a {
+  text-decoration: none;
+
+}
+
+#topmenu>li>a:hover {
+  color: #1fa8f8;
+  text-shadow: 0 2px #faf7f7;
+}
+
+#info {
+  background-color: rgb(159, 161, 155);
+  padding: 20px;
+}
+/* ------------------------------------------------ */
+
+.or_info {
+   display: flex;
+}
+#od label {
+  display: inline-block;
+  width: 80px;
+}

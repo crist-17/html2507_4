@@ -1,0 +1,76 @@
+.m_f {
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+#water {
+    font-weight: bold;
+    color: blue;
+
+
+}
+
+.w_info {
+    border: dotted;
+    border-color: rgb(69, 193, 241);
+    border-radius: 25px;
+    border-width: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.good a {
+text-decoration: none;
+color: blueviolet;
+}
+.good {
+    list-style: none;
+    text-align: center;
+}
+.good li {
+    margin-right: 20px;
+}
+
+.s_f {
+    text-shadow: 1px 3px 3px rgb(32, 7, 121);
+    color: rgb(185, 224, 10);
+    text-align: center;
+}
+.guild {
+   
+    list-style: none;
+}
+.guild li::before {
+    content:'⚔️';
+display: inline-block;
+    margin: 0.5em;
+}
+
+.bac_m {
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    height: 100px;
+    line-height: 100px;
+}
+.bac_bac {
+    background-image: url("../images/0722/img.jpg");
+}
+
+.bac_p {
+    color: brown;
+    text-shadow: 2px 2px greenyellow;
+    text-align: center;
+}
+
+.corona {
+    
+    text-align: center;
+    border: solid 1px black; padding: 0px;
+   
+}
+.corona1 {
+     text-align: center;
+}
