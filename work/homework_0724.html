@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .contents {
+            display: block;
+            background: url("./images/img.jpg") no-repeat;
+            /* background-size: cover; */
+            width: 800px;
+            height: 500px;
+            margin: 0%;
+            position: relative;
+            top: 100px;
+            left: 500px;
+        }
+
+        .contents h1 {
+            color: aliceblue;
+            font-size: 120px;
+            text-shadow: 2px 3px black;
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            margin: 0;
+
+        }
+        .desc {
+            border: 5px dotted #222 ;
+            background-color: #ffd9a0;
+            width: 350px;
+            padding: 20px;
+            margin-right: 20px;
+            /* float: left; */
+            margin: 30px;
+        }
+       
+        #clip_padding {
+            background-clip: padding-box;
+        }
+      
+        body {
+            background: url(./images/img.jpg) left top fixed;
+            background-size: cover;
+        }
+         .box {
+             width: 200px;
+            height: 300px;
+            /* display: inline-block; */
+            
+            position: absolute;
+            left: 0px;
+            top: 350px;
+           
+           
+            
+        } 
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .outer {
+            display: flex;
+            align-items: flex-start;
+            color: aliceblue;
+            width: 500px;
+            height: 400px;
+            overflow: scroll;
+            padding-left: 150px;
+            /* position: relative; */
+            margin-left: 100px;
+            max-height: 500px;
+            overflow: auto;
+          
+        }
+        .grad {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            background: rgb(236, 15, 15);
+            background: radial-gradient(circle at 20% 20%,rgb(236, 10, 10),white 10% ,rgb(95, 25, 25));
+
+        }
+.g_text {
+    position: absolute;
+      top: 200px;   /* 원하는 위치로 조절 */
+      left: 200px; /* 원하는 위치로 조절 */
+      color: white;
+      font-size: 40px;
+      text-shadow: 2px 2px 5px black;
+}
+.hot {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 340px;
+    top: 150px;
+    
+}
+    </style>
+</head>
+<body>
+     <div id="container">
+        
+        <div class="desc" id="clip_padding">
+            <h1 style="color: red;">과일몬스터</h1>
+            <p>가장인기상품은 <b>레드향</b>입니다.</p>
+            <p>레드향은 <em>한라봉과 귤을 교배</em>  한 것으로<br>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+        </div>
+        <hr>
+        <div class="outer">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor
+    eget pulvinar lobortis. Vestibulum ante ipsum primis in faucibus orci luctus
+    et ultrices posuere cubilia Curae; Nam ac dolor augue. Pellentesque mi mi,
+    laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit.
+    Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut
+    arcu aliquam purus viverra dictum vel sit amet mi. Duis nisl mauris, aliquam
+    sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem
+    aliquam, congue porttitor tortor. Sed tempor nisl a lorem consequat, id
+    maximus erat aliquet. Sed sagittis porta libero sed condimentum. Aliquam
+    finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id
+    ultrices ultrices, tempor et tellus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor
+    eget pulvinar lobortis. Vestibulum ante ipsum primis in faucibus orci luctus
+    et ultrices posuere cubilia Curae; Nam ac dolor augue. Pellentesque mi mi,
+    laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit.
+    Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut
+    arcu aliquam purus viverra dictum vel sit amet mi. Duis nisl mauris, aliquam
+    sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem
+    aliquam, congue porttitor tortor. Sed tempor nisl a lorem consequat, id
+    maximus erat aliquet. Sed sagittis porta libero sed condimentum. Aliquam
+    finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id
+    ultrices ultrices, tempor et tellus.
+  </p>
+  <div class="box" id="one"><img src="./images/farm.JPG" alt="농부"></div>
+
+</div>
+<br><br><br><hr><br><br>
+ <div class="grad">
+    <img class="hot" src="./images/더워.png" alt="더워">
+    <div class="g_text">아..더워</div>
+ </div>
+    
+ <br><br><br><br><br>
+</body>
+</html>

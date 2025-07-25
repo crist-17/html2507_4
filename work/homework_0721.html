@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제</title>
+    <link rel="stylesheet" href="./css/homework_0721.css">
+    <link rel="shortcut icon" href="./images/0721/imoge.jpg.svg" type="image/x-icon">
+    <style>
+        .note {
+            font-size: 200%;
+            color: blueviolet;
+            border: 2px solid greenyellow;
+            display: inline;
+            padding: 0px 5px;
+            margin: 0;
+            line-height: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="top_bar">
+            <ul class="menu">
+                <li>
+                    <a href="./login_0721.html" class="login">로그인</a>
+                </li>
+                <li>
+                    <a href="#order">주문하기</a>
+                </li>
+            </ul>
+
+
+        </div>
+        <h1 id="logo">과일몬스터</h1>
+
+
+        <nav>
+            <ul id="topmenu">
+                <li><a href="#list_f">과일</a></li>
+                <li><a href="#list_v">채소</a></li>
+                <li><a href="#list_r">쌀</a></li>
+                <li><a href="#list_rc">떡</a></li>
+
+            </ul>
+        </nav>
+
+    </div>
+    <br><br><br><br> <br><br><br><br> <br><br><br><br>
+    <div>
+        <h2>저희 과일몬스터는 <b>과일,채소,쌀,떡</b>을 취급하고 있으며
+            <br>고객님들께 최고의 품질의 식품를 제공하기위해 깐깐한 유통과정을 거칩니다.
+            <br>앞으로 더 좋은 과일몬스터가 되겠습니다.
+        </h2>
+    </div>
+    <div>
+        <br><br><br><br>
+        <img id="list_f" src="./images/0721/fruit.jpg" alt="과일"
+            style="width: 400px; height: 300px; margin-bottom: 20px;"><br>
+        <h2 id="list_f" class="note">과일목록</h2>
+
+        <ul style="list-style-type: circle;">
+            <li>사과</li>
+            <li>배</li>
+            <li>딸기</li>
+            <li>포도</li>
+            <li>메론</li>
+            <li>참외</li>
+            <li>자몽</li>
+        </ul>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img id="list_v" src="./images/0721/Vegetables.jpg" alt="채소"
+            style="width: 400px; height: 300px;margin-bottom: 20px;">
+        <br>
+        <h2 id="list_v" class="note">채소목록</h2>
+        <ul style="list-style-type: circle;">
+            <li>상추</li>
+            <li>깻잎</li>
+            <li>고추</li>
+            <li>오이</li>
+            <li>호박</li>
+            <li>비트</li>
+            <li>양파</li>
+        </ul>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <img id="list_r" src="./images/0721/rice.jpg" alt="쌀" style="width: 400px; height: 300px;margin-bottom: 20px;">
+        <br>
+        <h2 id="list_r" class="note">쌀목록</h2>
+        <ul style="list-style-type: circle;">
+            <li>현미</li>
+            <li>백미</li>
+            <li>인절미</li>
+            <li>흑미</li>
+            <li>잡곡</li>
+        </ul>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <img id="list_rc" src="./images/0721/ricecake.webp" alt="떡" style="width: 400px; height: 300px;margin-bottom: 20px;">
+    <br>
+    <h2 id="list_rc" class="note">떡 목록</h2>
+
+
+    <ul style="list-style-type: circle;">
+        <li>시루떡</li>
+        <li>백설기</li>
+        <li>꿀떡</li>
+        <li>콩떡</li>
+        <li>무지개떡</li>
+        <li>오메기떡</li>
+    </ul>
+
+    <hr>
+    <div>
+        <form action="#">
+
+            <fieldset id="od">
+                <legend id="order" >배송 정보</legend>
+                <ul  style="list-style: none; padding: 0;">
+                    <div class="or_info">
+                    <li>
+                        <label for="prod1">상품선택</label>
+                        <select id="prod1">
+                            <option value="f_f">과일</option>
+                            <option value="v_v">채소</option>
+                            <option value="r_r">쌀</option>
+                            <option value="rc_rc">떡</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select id="prod2">
+                            <option value="f01">사과</option>
+                            <option value="f02">배</option>
+                            <option value="f03">딸기</option>
+                            <option value="f03">포도</option>
+                            <option value="f03">메론</option>
+                            <option value="f03">참외</option>
+                            <option value="f03">자몽</option>
+                        </select>
+                    </li>
+                    </div>
+
+                    <li>
+                        <label for="user_id">아이디</label>
+                        <input type="text" id="user_id" autofocus style="width: 250px;" required>
+                    </li>
+                    <li>
+                        <label>배송 주소</label>
+                        <input type="text" style="width: 250px;" required>
+                    </li>
+                    <li>
+                        <label>이메일</label>
+                        <input type="email" style="width: 250px;">
+                    </li>
+                    <li>
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" placeholder="-는 빼고 입력하세요(01012345678)" style="width: 250px;"
+                            required>
+                    </li>
+                    <li>
+                        <label for="date" style=>배송지정</label>
+                        <input type="date"><span style="font-size: small;">(주문일로부터 최소 3일 이후)</span>
+                    </li>
+                    <li>
+                        <label for="memo">메모</label>
+                        <textarea id="memo" cols="40" rows="4"></textarea>
+                    </li>
+                </ul>
+                <div style="margin-left: 100px; margin-top: 10px;">
+                    <input type="submit" value="주문하기" style="margin-right: 10px;">
+                    <input type="reset" value="취소하기">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+<hr>
+    <footer id="info">
+        <section>
+            <ul>
+                <li><a href="https://map.naver.com/p/search/%EA%B3%BC%EC%9D%BC%EB%AA%AC%EC%8A%A4%ED%84%B0/place/1133541340?c=15.00,0,0,0,dh&placePath=/home?entry=bmp&from=map&fromPanelNum=2&timestamp=202507201554&locale=ko&svcName=map_pcv5&searchText=%EA%B3%BC%EC%9D%BC%EB%AA%AC%EC%8A%A4%ED%84%B0"
+                        target="_blank" style="text-decoration: none; color: black;">가게위치(클릭)</a></li>
+                <li>전화번호 : 000-000-0000</li>
+                <li>제휴가게 : 아빠과일 엄마과일 </li>
+
+            </ul>
+        </section>
+    </footer>
+
+</body>
+
+<body>
+
+</body>
+
+</html>

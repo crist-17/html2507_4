@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록 레벨과 인라인 레벨</title>
+    <style>
+        body * {
+            /* border: 2px inset blue; */
+
+        }
+
+        .accent {
+            color: red;
+            font-weight: bold;
+        }
+
+        .box1 {
+            width: 70%;
+            height: 70%;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 10px -10px 10px #000;
+
+        }
+
+        .circle {
+
+            border-bottom-left-radius: 20px;
+            border-top-right-radius:  100px 50px;
+            box-shadow: 20px 20px 20px green;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1px solid #000;
+            border-radius: 25px;
+           
+        }
+        nav > ul {
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline-block;
+            width: 100px;
+            line-height: 40px;
+            text-align: center;
+            margin: 10px;
+            border:1px solid #000;
+        }
+           .wrapper {
+      width: 800px;
+      margin: 10px auto;
+      padding: 20px;
+      border: 1px solid #ccc;      
+    }
+		.box {
+			padding:20px;
+			margin:10px;
+		}
+		/* Do it! float 속성을 사용해 배치하기 */
+		#box1{
+			background:#ffd800;
+            float: left;
+			}
+		#box2 {
+			background: #0094ff;
+            float: right;
+		}
+        .clear {
+            clear: both;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>시간이란</h1>
+    <div>내일 죽을 것처ddd럼<span class="accent">오늘</span>을 살고</div>
+    <p>영원히 살 것처럼 <br> 내일을 꿈dfdf꾸어라</p>
+
+    <div class="box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem id culpa, cum dolor esse
+        soluta magni, veniam, porro officia saepe est recusandae dicta labore magnam? Quod quibusdam accusantium
+        suscipit molestiae.</div>
+    <img class="circle" src="./images/0723/img.jpg" alt="sdsd"><br>
+    <button>바보</button>
+
+    <div>
+        <nav>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+            </ul>
+        </nav>
+        <button class="button">이건 클릭안됨</button>
+    </div>
+
+    <div class="wrapper">
+		<div class="box" id="box1">박스1</div>
+    <div class="box" id="box2">박스2</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, deserunt. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>    
+  <p class="clear">gkdfkgfdgnselkdkdi4ekdmfkdlsfmㅇ러나룬아룬우란ㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹ</p>
+</div>
+
+
+</body>
+
+
+</html>
