@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            width: 600px;
+            margin: 20px;
+            /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            gap: 20px;
+        }
+
+        .item {
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+
+
+        }
+
+        .item:nth-child(even) {
+            background-color: #ffc400;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+
+</html>
